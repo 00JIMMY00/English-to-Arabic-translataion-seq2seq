@@ -29,8 +29,8 @@ def load_tokenizer(tokenizer_path):
         return pickle.load(handle)
 
 # Load the encoder model (downloaded if not cached)
-encoder_model_url = "https://drive.google.com/uc?id=12g6AJgPoFdqX_kzrCSj4n51TyX3iqCfM"
-encoder_path = download_model(encoder_model_url, "eng_to_arabic_encoder_98_acc_99_val_v2.keras")
+encoder_model_url = "https://drive.google.com/file/d/12g6AJgPoFdqX_kzrCSj4n51TyX3iqCfM/view?usp=sharing"
+encoder_path = download_model(encoder_model_url, "encoder.keras")
 encoder_model = load_my_model(encoder_path)
 
 # Load the decoder model (downloaded if not cached)
