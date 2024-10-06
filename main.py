@@ -30,12 +30,12 @@ def load_tokenizer(tokenizer_path):
 
 # Load the encoder model (downloaded if not cached)
 encoder_model_url = "https://drive.google.com/uc?id=1LFESeIf3CgMD66s5Bb9qCa-tLDT6tN7y"
-encoder_path = download_model(encoder_model_url, "next_word_lstmv2.h5")
+encoder_path = download_model(encoder_model_url, "eng_to_arabic_encoder_98_acc_99_val_v2.h5")
 encoder_model = load_my_model(encoder_path)
 
 # Load the decoder model (downloaded if not cached)
 decoder_model_url = "https://drive.google.com/uc?id=1Jfiyzov3PXfXE0_8CanowVQj7ERyreER"
-decoder_path = download_model(decoder_model_url, "eng_to_arabic_decoder_98_acc_99_val_v2.keras")
+decoder_path = download_model(decoder_model_url, "eng_to_arabic_decoder_98_acc_99_val_v2.h5")
 decoder_model = load_my_model(decoder_path)
 
 # Load the arabic tokenizer (downloaded if not cached)
