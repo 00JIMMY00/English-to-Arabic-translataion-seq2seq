@@ -30,7 +30,7 @@ def load_tokenizer(tokenizer_path):
 
 # Load the encoder model (downloaded if not cached)
 encoder_model_url = "https://drive.google.com/uc?id=1LFESeIf3CgMD66s5Bb9qCa-tLDT6tN7y"
-encoder_path = download_model(encoder_model_url, "encoder.keras")
+encoder_path = download_model(encoder_model_url, "next_word_lstmv2.h5")
 encoder_model = load_my_model(encoder_path)
 
 # Load the decoder model (downloaded if not cached)
