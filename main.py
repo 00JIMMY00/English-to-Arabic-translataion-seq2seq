@@ -14,7 +14,7 @@ def download_model(url, output):
 # Function to load the model from the cached file
 @st.cache_data(show_spinner=False)
 def load_my_model(model_path):
-    return load_model(model_path)
+    return load_model(model_path, compile=False)
 
 # Function to download and cache the tokenizer (pickle file)
 @st.cache_data
