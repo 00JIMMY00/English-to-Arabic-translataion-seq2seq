@@ -29,7 +29,7 @@ def load_tokenizer(tokenizer_path):
         return pickle.load(handle)
 
 # Load the encoder model (downloaded if not cached)
-encoder_model_url = "https://drive.google.com/file/d/12g6AJgPoFdqX_kzrCSj4n51TyX3iqCfM/view?usp=sharing"
+encoder_model_url = "https://drive.google.com/uc?id=1LFESeIf3CgMD66s5Bb9qCa-tLDT6tN7y"
 encoder_path = download_model(encoder_model_url, "encoder.keras")
 encoder_model = load_my_model(encoder_path)
 
